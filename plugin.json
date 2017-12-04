@@ -1,0 +1,25 @@
+{
+  "name": "ElasticExportCriteo",
+  "description": "This plugin adds the format Criteo to the Elastic Export.",
+  "namespace": "ElasticExportCriteo",
+  "author": "plentymarkets GmbH",
+  "type": "export",
+  "authorIcon": "icon_author_xs.png",
+  "serviceProvider": "ElasticExportCriteo\\ElasticExportCriteoServiceProvider",
+  "license": "GNU AFFERO GENERAL PUBLIC LICENSE Version 3, 19 November 2007",
+  "pluginIcon": "icon_plugin_md.png",
+  "price": 0.00,
+  "shortDescription": {
+    "de": "Das Plugin ElasticExportCriteo fügt das Datenformat Criteo-Plugin zum Elastischen Export hinzu.",
+    "en": "This plugin adds the format Criteo-Plugin to the Elastic Export."
+  },
+  "categories": [
+    "3523"
+  ],
+  "version": "1.0.0",
+  "require": ["ElasticExport"],
+  "marketplaceName": {
+    "de":"criteo",
+    "en":"criteo"
+  }
+}
