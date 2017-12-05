@@ -116,6 +116,8 @@ In der folgenden Tabelle finden Sie Hinweise zu den Einstellungen, Formateinstel
 
 ## 3 Übersicht der verfügbaren Spalten
 
+Zusätzliche Informationen zu den einzelen Spalten sind direkt bei [Criteo](https://support.criteo.com/hc/en-us/articles/207571095-Criteo-Product-Feed-specification) erläutert (nur auf Englisch verfügbar). 
+
 <table>
     <tr>
         <th>
@@ -130,7 +132,7 @@ In der folgenden Tabelle finden Sie Hinweise zu den Einstellungen, Formateinstel
 			id
 		</td>
 		<td>
-			Die <b>SKU</b> für Criteo der Variante.
+			Die <b>SKU</b> der Variante.
 		</td>        
 	</tr>
 	<tr>
@@ -234,7 +236,7 @@ In der folgenden Tabelle finden Sie Hinweise zu den Einstellungen, Formateinstel
             adult
         </td>
         <td>
-            Das Erwachsenenstatus in Bezug auf das Criteo-Merkmal **Erwachsene**.
+		Das Criteo-Merkmal **Volljährig**. Mögliche Werte: <b>yes</b> und <b>no</b>.
         </td>        
     </tr>
 	<tr>
@@ -282,7 +284,7 @@ In der folgenden Tabelle finden Sie Hinweise zu den Einstellungen, Formateinstel
             mobile_link
         </td>
         <td>
-            Mobiler Link in Bezug auf das Criteo-Merkmal **Mobiler-Link**.
+            Das Criteo-Merkmal **Mobillink**.
         </td>        
     </tr>
 	<tr>
@@ -290,7 +292,7 @@ In der folgenden Tabelle finden Sie Hinweise zu den Einstellungen, Formateinstel
 			condition
 		</td>
 		<td>
-			Der Zustand des Artikels. Anhand <b>Artikel » Artikel bearbeiten » Global » Grundeinstellungen » Zustand API</b>
+			Der Zustand des Artikels. Mögliche Werte <b>new</b>, <b>refurbished</b> and <b>used</b>.
 		</td>        
 	</tr>
     <tr>
@@ -314,7 +316,7 @@ In der folgenden Tabelle finden Sie Hinweise zu den Einstellungen, Formateinstel
             gender
         </td>
         <td>
-            Das Geschlecht in Bezug auf das Criteo-Merkmal **Geschlecht**.
+            Das Geschlecht in Bezug auf das Criteo-Merkmal **Geschlecht**. Mögliche Werte <b>female</b>, <b>male</b> and <b>unisex</b>.
         </td>        
     </tr>
     <tr>
@@ -322,7 +324,7 @@ In der folgenden Tabelle finden Sie Hinweise zu den Einstellungen, Formateinstel
             age_group
         </td>
         <td>
-            Die Altersgruppe in Bezug auf das Criteo-Merkmal **Altersgruppe**.
+            Das Criteo-Merkmal **Altersgruppe**. Mögliche Werte <b>newborn</b>, <b>infant</b>, <b>toddler</b>, <b>kids</b> and <b>adult</b>.
         </td>        
     </tr>
     <tr>
@@ -330,7 +332,7 @@ In der folgenden Tabelle finden Sie Hinweise zu den Einstellungen, Formateinstel
             material
         </td>
         <td>
-            Das <b>Material</b> für die Vartiante anhand des Attibuts oder eines Merkmals. Merkmale werden bevorzugt behandelt.
+            Das <b>Material</b> der Vartiante anhand des Attibuts oder eines Merkmals. Merkmale werden bevorzugt behandelt.
         </td>        
     </tr>
     <tr>
@@ -338,7 +340,7 @@ In der folgenden Tabelle finden Sie Hinweise zu den Einstellungen, Formateinstel
             pattern
         </td>
         <td>
-            Das <b>Muster</b> für die Vartiante anhand des Attibuts oder eines Merkmals. Merkmale werden bevorzugt behandelt.
+            Das <b>Muster</b> der Vartiante anhand eines Attibuts oder eines Merkmals. Merkmale werden bevorzugt behandelt.
         </td>        
     </tr>
 	<tr>
@@ -346,7 +348,7 @@ In der folgenden Tabelle finden Sie Hinweise zu den Einstellungen, Formateinstel
 			size
 		</td>
 		<td>
-			Die <b>Größe</b> für die Vartiante anhand des Attibuts oder eines Merkmals. Merkmale werden bevorzugt behandelt.
+			Die <b>Größe</b> der Vartiante anhand eines Attibuts oder eines Merkmals. Merkmale werden bevorzugt behandelt.
 		</td>        
 	</tr>
     <tr>
@@ -354,15 +356,15 @@ In der folgenden Tabelle finden Sie Hinweise zu den Einstellungen, Formateinstel
             size_type
         </td>
         <td>
-            Das Größensystem in Bezug auf das Criteo-Merkmal **Größensystem**.
-        </td>        
+            Das Criteo-Merkmal **Größentyp**. Mögliche Werte <b>regular</b>, <b>petite</b>, <b>used</b>, <b>big and tall</b> and <b>maternity</b>.
+        </td>plus
     </tr>
     <tr>
         <td>
             size_system
         </td>
         <td>
-            Das Größensystem in Bezug auf das Criteo-Merkmal **Größensystem**.
+            Das Criteo-Merkmal **Größensystem**. Mögliche Werte <b>US</b>, <b>UK</b>, <b>EU</b>, <b>UK</b>, <b>DE</b>, <b>FR</b>, <b>JP</b>, <b>CN</b>, <b>IT</b>, <b>BR</b>, <b>MEX</b> and <b>AU</b>.
         </td>        
     </tr>
     <tr>
@@ -370,7 +372,7 @@ In der folgenden Tabelle finden Sie Hinweise zu den Einstellungen, Formateinstel
             cross_sellers_product_id
         </td>
         <td>
-            Das Cross Verkäufer in Bezug auf das Criteo-Merkmal **Cross Verkäufer**.
+            Das Criteo-Merkmal **Cross-Selling-ID**.
         </td>        
     </tr>
     <tr>
@@ -378,7 +380,7 @@ In der folgenden Tabelle finden Sie Hinweise zu den Einstellungen, Formateinstel
             seller_name
         </td>
         <td>
-            Das Verkäufer-Name in Bezug auf das Criteo-Merkmal **Verkäufer-Name**.
+            Das Criteo-Merkmal **Verkäufername**.
         </td>        
     </tr>
     <tr>
@@ -386,7 +388,7 @@ In der folgenden Tabelle finden Sie Hinweise zu den Einstellungen, Formateinstel
             seller_id
         </td>
         <td>
-            Das Verkäufer-Id in Bezug auf das Criteo-Merkmal **Verkäufer-Id**.
+	Das Criteo-Merkmal **Verkäufer-Id**.
         </td>        
     </tr>
 	<tr>
@@ -402,7 +404,7 @@ In der folgenden Tabelle finden Sie Hinweise zu den Einstellungen, Formateinstel
 			shipping_weight
 		</td>
 		<td>
-			Das Versandgewicht der Variante.
+			Gewicht der Variante.
 		</td>        
 	</tr>
     <tr>
@@ -410,7 +412,7 @@ In der folgenden Tabelle finden Sie Hinweise zu den Einstellungen, Formateinstel
             shipping_height
         </td>
         <td>
-            Das Versandhöhe der Variante.
+            Höhe der Variante.
         </td>        
     </tr>
     <tr>
@@ -418,7 +420,7 @@ In der folgenden Tabelle finden Sie Hinweise zu den Einstellungen, Formateinstel
             shipping_width
         </td>
         <td>
-            Das Versandbreite der Variante.
+            Breite der Variante.
         </td>        
     </tr>
     <tr>
@@ -426,7 +428,7 @@ In der folgenden Tabelle finden Sie Hinweise zu den Einstellungen, Formateinstel
             shipping_length
         </td>
         <td>
-            Das Versandlänge der Variante.
+            Länge der Variante.
         </td>        
     </tr>
     <tr>
@@ -434,7 +436,7 @@ In der folgenden Tabelle finden Sie Hinweise zu den Einstellungen, Formateinstel
             shipping_label
         </td>
         <td>
-            Das Versandaufkleber der Variante.
+            Das Versandlabel der Variante.
         </td>        
     </tr>
     <tr>
@@ -458,7 +460,7 @@ In der folgenden Tabelle finden Sie Hinweise zu den Einstellungen, Formateinstel
             promotion_id
         </td>
         <td>
-            Die Aktions-ID in Bezug auf das Criteo-Merkmal **Aktions-ID**.
+            Das Criteo-Merkmal **Aktions-ID**.
         </td>        
     </tr>
     <tr>
@@ -466,7 +468,7 @@ In der folgenden Tabelle finden Sie Hinweise zu den Einstellungen, Formateinstel
             promo_text
         </td>
         <td>
-            Die Aktions-Text in Bezug auf das Criteo-Merkmal **Aktions-Text**.
+            Das Criteo-Merkmal **Aktionstext**.
         </td>        
     </tr>
     <tr>
@@ -474,7 +476,7 @@ In der folgenden Tabelle finden Sie Hinweise zu den Einstellungen, Formateinstel
             custom_label_0
         </td>
         <td>
-            Das Benutzerdefinierte Label 0 in Bezug auf das Criteo-Merkmal **Benutzerdefiniertes Label 0**.
+            Das Criteo-Merkmal **Benutzerdefiniertes Label 0**.
         </td>        
     </tr>
     <tr>
@@ -482,7 +484,7 @@ In der folgenden Tabelle finden Sie Hinweise zu den Einstellungen, Formateinstel
             custom_label_1
         </td>
         <td>
-            Das Benutzerdefinierte Label 1 in Bezug auf das Criteo-Merkmal **Benutzerdefiniertes Label 1**.
+            Das Criteo-Merkmal **Benutzerdefiniertes Label 1**.
         </td>        
     </tr>
     <tr>
@@ -490,7 +492,7 @@ In der folgenden Tabelle finden Sie Hinweise zu den Einstellungen, Formateinstel
             custom_label_2
         </td>
         <td>
-            Das Benutzerdefinierte Label 2 in Bezug auf das Criteo-Merkmal **Benutzerdefiniertes Label 2**.
+            Das Criteo-Merkmal **Benutzerdefiniertes Label 2**.
         </td>        
     </tr>
     <tr>
@@ -498,7 +500,7 @@ In der folgenden Tabelle finden Sie Hinweise zu den Einstellungen, Formateinstel
             custom_label_3
         </td>
         <td>
-            Das Benutzerdefinierte Label 3 in Bezug auf das Criteo-Merkmal **Benutzerdefiniertes Label 3**.
+            Das Criteo-Merkmal **Benutzerdefiniertes Label 3**.
         </td>        
     </tr>
     <tr>
@@ -506,7 +508,7 @@ In der folgenden Tabelle finden Sie Hinweise zu den Einstellungen, Formateinstel
             custom_label_4
         </td>
         <td>
-            Das Benutzerdefinierte Label 4 in Bezug auf das Criteo-Merkmal **Benutzerdefiniertes Label 4**.
+            Das Criteo-Merkmal **Benutzerdefiniertes Label 4**.
         </td>        
     </tr>
     <tr>
@@ -514,7 +516,7 @@ In der folgenden Tabelle finden Sie Hinweise zu den Einstellungen, Formateinstel
             sale_price_effective_date
         </td>
         <td>
-            Der Sonderangebotszeitraum in Bezug auf das Criteo-Merkmal **Sonderangebotszeitraum**.
+            Das Criteo-Merkmal **Sonderangebotszeitraum**.
         </td>        
     </tr>
     <tr>
@@ -522,7 +524,7 @@ In der folgenden Tabelle finden Sie Hinweise zu den Einstellungen, Formateinstel
             adwords_redirect
         </td>
         <td>
-            AdWords Redirect in Bezug auf das Criteo-Merkmal **AdWords Redirect**.
+            Das Criteo-Merkmal **AdWords Redirect**.
         </td>        
     </tr>
 	<tr>
@@ -530,7 +532,7 @@ In der folgenden Tabelle finden Sie Hinweise zu den Einstellungen, Formateinstel
 			excluded_destination
 		</td>
 		<td>
-            Ausgeschlossenes Ziel in Bezug auf das Criteo-Merkmal **Ausgeschlossenes Ziel**.
+            Das Criteo-Merkmal **Ausgeschlossenes Ziel**.
         </td>        
 	</tr>
     <tr>
