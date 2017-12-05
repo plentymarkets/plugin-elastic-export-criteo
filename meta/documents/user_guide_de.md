@@ -557,14 +557,6 @@ In der folgenden Tabelle finden Sie Hinweise zu den Einstellungen, Formateinstel
 			Die <b>Grundeinheit</b> der Variante in Bezug auf **unit_pricing_measure**.
 		</td>        
 	</tr>
-	<tr>
-		<td>
-			energy_efficiency_class
-		</td>
-		<td>
-			Die Energieefizienzklasse in Bezug auf das Criteo-Merkmal **Energieefizienzklasse**.
-		</td>        
-	</tr>
     <tr>
         <td>
             display_ads_title
