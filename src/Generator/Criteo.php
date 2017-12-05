@@ -57,6 +57,7 @@ class Criteo extends CSVPluginGenerator
     const ISO_CODE_3                                = 'isoCode3';
 
     const CRITEO                                    = 153.00;
+    const GOOGLE_SHOPPING                           = 7.00;
 
     const DELIMITER = "\t"; // TAB
 
@@ -355,7 +356,7 @@ class Criteo extends CSVPluginGenerator
             'id'                            => $this->elasticExportHelper->generateSku($variation['id'], self::CRITEO, 0, (string)$variation['data']['skus'][0]['sku']),
             'title'                         => $this->elasticExportHelper->getMutatedName($variation, $settings),
             'description'                   => $this->getDescription($variation, $settings),
-            'google_product_category'       => $this->elasticExportHelper->getCategoryMarketplace((int)$variation['data']['defaultCategories'][0]['id'], (int)$settings->get('plentyId'), (int)self::CRITEO),
+            'google_product_category'       => $this->elasticExportHelper->getCategoryMarketplace((int)$variation['data']['defaultCategories'][0]['id'], (int)$settings->get('plentyId'), (int)self::GOOGLE_SHOPPING),
             'link'                          => $this->elasticExportHelper->getMutatedUrl($variation, $settings, true, false),
             'image_link'                    => $images[ImageHelper::MAIN_IMAGE],
             'additional_image_link'         => $images[ImageHelper::ADDITIONAL_IMAGES],

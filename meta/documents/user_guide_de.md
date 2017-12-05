@@ -5,7 +5,7 @@
 
 ## 1 Bei Criteo registrieren
 
-Das Preisvergleichsportal Criteo bietet Such- und Vergleichsfunktionen sowie Links zu den Produktseiten anderer Online-Shops. Betreiber von Online-Shops können ihre Produkte durch Abrechnung auf Klickbasis auf Criteo-Listen in der Criteo-Suche anzeigen lassen. Dieses Format basiert auf Criteo International. Dementsprechend müssen verknüpfte Merkmalwerte und Verfügbarkeiten im elastischen Export auf englisch gepflegt sein.
+Criteo ist ein personalisiertes Retargeting-Unternehmen, das mit Internethändlern zusammenarbeitet, um Kunden, die die Website des Werbetreibenden bereits besucht haben, personalisierte Online-Werbeanzeigen zu bieten.
 Um das Plugin für Criteo einzurichten, registrieren Sie sich zunächst als Händler.
 
 ## 2 Elastic Export Criteo-Plugin in plentymarkets einrichten
@@ -130,7 +130,7 @@ In der folgenden Tabelle finden Sie Hinweise zu den Einstellungen, Formateinstel
 			id
 		</td>
 		<td>
-			<b>Inhalt:</b> Die <b>SKU</b> für Criteo der Variante.
+			Die <b>SKU</b> für Criteo der Variante.
 		</td>        
 	</tr>
 	<tr>
@@ -138,7 +138,7 @@ In der folgenden Tabelle finden Sie Hinweise zu den Einstellungen, Formateinstel
 			title
 		</td>
 		<td>
-			<b>Inhalt:</b> Entsprechend der Formateinstellung <b>Artikelname</b>.
+			Entsprechend der Formateinstellung <b>Artikelname</b>.
 		</td>        
 	</tr>
 	<tr>
@@ -146,7 +146,7 @@ In der folgenden Tabelle finden Sie Hinweise zu den Einstellungen, Formateinstel
 			description
 		</td>
 		<td>
-			<b>Inhalt:</b> Entsprechend der Formateinstellung <b>Beschreibung</b>.
+			Entsprechend der Formateinstellung <b>Beschreibung</b>.
 		</td>        
 	</tr>
 	<tr>
@@ -154,151 +154,247 @@ In der folgenden Tabelle finden Sie Hinweise zu den Einstellungen, Formateinstel
 			google_product_category
 		</td>
 		<td>
-			<b>Inhalt:</b> Entsprechend der Einstellung <b>Einstellungen » Märkte » Google » Google Shopping Int.</b> die Google Shopping Kategorie der Standardkategorie.
+			Entsprechend der Einstellung <b>Einstellungen » Märkte » Google » Google Shopping Int.</b> die Google Shopping Kategorie der Standardkategorie.
 		</td>        
 	</tr>
+	<tr>
+        <td>
+            link
+        </td>
+        <td>
+            Der <b>URL-Pfad</b> des Artikels abhängig vom gewählten <b>Mandanten</b> in den Formateinstellungen.
+        </td>        
+    </tr>
+    <tr>
+        <td>
+            image_link
+        </td>
+        <td>
+            URL des Bildes. Variantenbiler werden vor Artikelbildern priorisiert.
+        </td>        
+    </tr>
+    <tr>
+        <td>
+            additional_image_link
+        </td>
+        <td>
+            Zusätzliche kommagetrennte URLs für bis zu 10 zusätzliche Bilder. Variantenbiler werden vor Artikelbildern priorisiert.
+        </td>        
+    </tr>
+    <tr>
+        <td>
+            availability
+        </td>
+        <td>
+            Der <b>Name der Artikelverfügbarkeit</b> unter <b>Einstellungen » Artikel » Artikelverfügbarkeit</b> oder die Übersetzung gemäß der Formateinstellung <b>Artikelverfügbarkeit überschreiben</b>.
+        </td>        
+    </tr>
+    <tr>
+        <td>
+            price
+        </td>
+        <td>
+            Der <b>Verkaufspreis</b>.
+        </td>        
+    </tr>
+    <tr>
+        <td>
+            sale_price
+        </td>
+        <td>
+            Der <b>Angebotspreis</b> abhängig der Formatseinstellung **Angebotspreis**.
+        </td>        
+    </tr>
+    <tr>
+        <td>
+            gtin
+        </td>
+        <td>
+            Entsprechend der Formateinstellung <b>Barcode</b>.
+        </td>        
+    </tr>
+    <tr>
+        <td>
+            mpn
+        </td>
+        <td>
+            Das <b>Model</b> der Vartiante.
+        </td>        
+    </tr>
+    <tr>
+        <td>
+            brand
+        </td>
+        <td>
+            Der <b>Name des Herstellers</b> des Artikels. Der <b>Externe Name</b> unter <b>Einstellungen » Artikel » Hersteller</b> wird bevorzugt, wenn vorhanden.
+        </td>        
+    </tr>
+    <tr>
+        <td>
+            adult
+        </td>
+        <td>
+            Das Erwachsenenstatus in Bezug auf das Criteo-Merkmal **Erwachsene**.
+        </td>        
+    </tr>
 	<tr>
 		<td>
 			product_type
 		</td>
 		<td>
-			<b>Inhalt:</b> Name der Standardkategorie, die mit der Variante verknüpft ist.
+			Name der Standardkategorie, die mit der Variante verknüpft ist.
 		</td>        
 	</tr>
-	<tr>
-		<td>
-			link
-		</td>
-		<td>
-			<b>Inhalt:</b> Der <b>URL-Pfad</b> des Artikels abhängig vom gewählten <b>Mandanten</b> in den Formateinstellungen.
-		</td>        
-	</tr>
-	<tr>
-		<td>
-			image_link
-		</td>
-		<td>
-			<b>Inhalt:</b> URL des Bildes. Variantenbiler werden vor Artikelbildern priorisiert.
-		</td>        
-	</tr>
-	<tr>
-		<td>
-			additional_image_link
-		</td>
-		<td>
-			<b>Inhalt:</b> Zusätzliche kommagetrennte URLs für bis zu 10 zusätzliche Bilder. Variantenbiler werden vor Artikelbildern priorisiert.
-		</td>        
-	</tr>
+    <tr>
+        <td>
+            product_type_key
+        </td>
+        <td>
+            Leer.
+        </td>        
+    </tr>
+    <tr>
+        <td>
+            number_of_ratings
+        </td>
+        <td>
+            Leer.
+        </td>        
+    </tr>
+    <tr>
+        <td>
+            product_rating
+        </td>
+        <td>
+            Leer.
+        </td>        
+    </tr>
+    <tr>
+        <td>
+            filters
+        </td>
+        <td>
+            Leer.
+        </td>        
+    </tr>
+    <tr>
+        <td>
+            mobile_link
+        </td>
+        <td>
+            Mobiler Link in Bezug auf das Criteo-Merkmal **Mobiler-Link**.
+        </td>        
+    </tr>
 	<tr>
 		<td>
 			condition
 		</td>
 		<td>
-			<b>Inhalt:</b> Der Zustand des Artikels. Anhand <b>Artikel » Artikel bearbeiten » Global » Grundeinstellungen » Zustand API</b>
+			Der Zustand des Artikels. Anhand <b>Artikel » Artikel bearbeiten » Global » Grundeinstellungen » Zustand API</b>
 		</td>        
 	</tr>
-	<tr>
-		<td>
-			availability
-		</td>
-		<td>
-			<b>Inhalt:</b> Der <b>Name der Artikelverfügbarkeit</b> unter <b>Einstellungen » Artikel » Artikelverfügbarkeit</b> oder die Übersetzung gemäß der Formateinstellung <b>Artikelverfügbarkeit überschreiben</b>.
-		</td>        
-	</tr>
-	<tr>
-		<td>
-			price
-		</td>
-		<td>
-			<b>Inhalt:</b> Der <b>Verkaufspreis</b>.
-		</td>        
-	</tr>
-	<tr>
-		<td>
-			sale_price
-		</td>
-		<td>
-			<b>Inhalt:</b> Der <b>Angebotspreis</b> abhängig der Formatseinstellung **Angebotspreis**.
-		</td>        
-	</tr>
-	<tr>
-		<td>
-			brand
-		</td>
-		<td>
-			<b>Inhalt:</b> Der <b>Name des Herstellers</b> des Artikels. Der <b>Externe Name</b> unter <b>Einstellungen » Artikel » Hersteller</b> wird bevorzugt, wenn vorhanden.
-		</td>        
-	</tr>
-	<tr>
-		<td>
-			gtin
-		</td>
-		<td>
-			<b>Inhalt:</b> Entsprechend der Formateinstellung <b>Barcode</b>.
-		</td>        
-	</tr>
-	<tr>
-		<td>
-			isbn
-		</td>
-		<td>
-			<b>Inhalt:</b> Die <b>ISBN</b> für die Vartiante.
-		</td>        
-	</tr>
-	<tr>
-		<td>
-			mpn
-		</td>
-		<td>
-			<b>Inhalt:</b> Das <b>Model</b> der Vartiante.
-		</td>        
-	</tr>
+    <tr>
+        <td>
+            item_group_id
+        </td>
+        <td>
+            Die <b>Artikel-ID</b> der Variante.
+        </td>        
+    </tr>
 	<tr>
 		<td>
 			color
 		</td>
 		<td>
-			<b>Inhalt:</b> Die <b>Farbe</b> für die Vartiante anhand des Attibuts oder eines Merkmals. Merkmale werden bevorzugt behandelt.
+			Die <b>Farbe</b> für die Vartiante anhand des Attibuts oder eines Merkmals. Merkmale werden bevorzugt behandelt.
 		</td>        
 	</tr>
+    <tr>
+        <td>
+            gender
+        </td>
+        <td>
+            Das Geschlecht in Bezug auf das Criteo-Merkmal **Geschlecht**.
+        </td>        
+    </tr>
+    <tr>
+        <td>
+            age_group
+        </td>
+        <td>
+            Die Altersgruppe in Bezug auf das Criteo-Merkmal **Altersgruppe**.
+        </td>        
+    </tr>
+    <tr>
+        <td>
+            material
+        </td>
+        <td>
+            Das <b>Material</b> für die Vartiante anhand des Attibuts oder eines Merkmals. Merkmale werden bevorzugt behandelt.
+        </td>        
+    </tr>
+    <tr>
+        <td>
+            pattern
+        </td>
+        <td>
+            Das <b>Muster</b> für die Vartiante anhand des Attibuts oder eines Merkmals. Merkmale werden bevorzugt behandelt.
+        </td>        
+    </tr>
 	<tr>
 		<td>
 			size
 		</td>
 		<td>
-			<b>Inhalt:</b> Die <b>Größe</b> für die Vartiante anhand des Attibuts oder eines Merkmals. Merkmale werden bevorzugt behandelt.
+			Die <b>Größe</b> für die Vartiante anhand des Attibuts oder eines Merkmals. Merkmale werden bevorzugt behandelt.
 		</td>        
 	</tr>
-	<tr>
-		<td>
-			material
-		</td>
-		<td>
-			<b>Inhalt:</b> Das <b>Material</b> für die Vartiante anhand des Attibuts oder eines Merkmals. Merkmale werden bevorzugt behandelt.
-		</td>        
-	</tr>
-	<tr>
-		<td>
-			pattern
-		</td>
-		<td>
-			<b>Inhalt:</b> Das <b>Muster</b> für die Vartiante anhand des Attibuts oder eines Merkmals. Merkmale werden bevorzugt behandelt.
-		</td>        
-	</tr>
-	<tr>
-		<td>
-			item_group_id
-		</td>
-		<td>
-			<b>Inhalt:</b> Die <b>Artikel-ID</b> der Variante.
-		</td>        
-	</tr>
+    <tr>
+        <td>
+            size_type
+        </td>
+        <td>
+            Das Größensystem in Bezug auf das Criteo-Merkmal **Größensystem**.
+        </td>        
+    </tr>
+    <tr>
+        <td>
+            size_system
+        </td>
+        <td>
+            Das Größensystem in Bezug auf das Criteo-Merkmal **Größensystem**.
+        </td>        
+    </tr>
+    <tr>
+        <td>
+            cross_sellers_product_id
+        </td>
+        <td>
+            Das Cross Verkäufer in Bezug auf das Criteo-Merkmal **Cross Verkäufer**.
+        </td>        
+    </tr>
+    <tr>
+        <td>
+            seller_name
+        </td>
+        <td>
+            Das Verkäufer-Name in Bezug auf das Criteo-Merkmal **Verkäufer-Name**.
+        </td>        
+    </tr>
+    <tr>
+        <td>
+            seller_id
+        </td>
+        <td>
+            Das Verkäufer-Id in Bezug auf das Criteo-Merkmal **Verkäufer-Id**.
+        </td>        
+    </tr>
 	<tr>
 		<td>
 			shipping
 		</td>
 		<td>
-			<b>Inhalt:</b> Entsprechend der Formateinstellung <b>Versandkosten</b>.
+			Entsprechend der Formateinstellung <b>Versandkosten</b>.
 		</td>        
 	</tr>
 	<tr>
@@ -306,41 +402,145 @@ In der folgenden Tabelle finden Sie Hinweise zu den Einstellungen, Formateinstel
 			shipping_weight
 		</td>
 		<td>
-			<b>Inhalt:</b> Das Versandgewicht der Variante.
+			Das Versandgewicht der Variante.
 		</td>        
 	</tr>
-	<tr>
-		<td>
-			gender
-		</td>
-		<td>
-			<b>Inhalt:</b> Das Geschlecht in Bezug auf das Criteo-Merkmal **Geschlecht**.
-		</td>        
-	</tr>
-	<tr>
-		<td>
-			age_group
-		</td>
-		<td>
-			<b>Inhalt:</b> Die Altersgruppe in Bezug auf das Criteo-Merkmal **Altersgruppe**.
-		</td>        
-	</tr>
+    <tr>
+        <td>
+            shipping_height
+        </td>
+        <td>
+            Das Versandhöhe der Variante.
+        </td>        
+    </tr>
+    <tr>
+        <td>
+            shipping_width
+        </td>
+        <td>
+            Das Versandbreite der Variante.
+        </td>        
+    </tr>
+    <tr>
+        <td>
+            shipping_length
+        </td>
+        <td>
+            Das Versandlänge der Variante.
+        </td>        
+    </tr>
+    <tr>
+        <td>
+            shipping_label
+        </td>
+        <td>
+            Das Versandaufkleber der Variante.
+        </td>        
+    </tr>
+    <tr>
+        <td>
+            multipack
+        </td>
+        <td>
+            Leer.
+        </td>        
+    </tr>
+    <tr>
+        <td>
+            is_bundle
+        </td>
+        <td>
+            Leer.
+        </td>        
+    </tr>
+    <tr>
+        <td>
+            promotion_id
+        </td>
+        <td>
+            Die Aktions-ID in Bezug auf das Criteo-Merkmal **Aktions-ID**.
+        </td>        
+    </tr>
+    <tr>
+        <td>
+            promo_text
+        </td>
+        <td>
+            Die Aktions-Text in Bezug auf das Criteo-Merkmal **Aktions-Text**.
+        </td>        
+    </tr>
+    <tr>
+        <td>
+            custom_label_0
+        </td>
+        <td>
+            Das Benutzerdefinierte Label 0 in Bezug auf das Criteo-Merkmal **Benutzerdefiniertes Label 0**.
+        </td>        
+    </tr>
+    <tr>
+        <td>
+            custom_label_1
+        </td>
+        <td>
+            Das Benutzerdefinierte Label 1 in Bezug auf das Criteo-Merkmal **Benutzerdefiniertes Label 1**.
+        </td>        
+    </tr>
+    <tr>
+        <td>
+            custom_label_2
+        </td>
+        <td>
+            Das Benutzerdefinierte Label 2 in Bezug auf das Criteo-Merkmal **Benutzerdefiniertes Label 2**.
+        </td>        
+    </tr>
+    <tr>
+        <td>
+            custom_label_3
+        </td>
+        <td>
+            Das Benutzerdefinierte Label 3 in Bezug auf das Criteo-Merkmal **Benutzerdefiniertes Label 3**.
+        </td>        
+    </tr>
+    <tr>
+        <td>
+            custom_label_4
+        </td>
+        <td>
+            Das Benutzerdefinierte Label 4 in Bezug auf das Criteo-Merkmal **Benutzerdefiniertes Label 4**.
+        </td>        
+    </tr>
+    <tr>
+        <td>
+            sale_price_effective_date
+        </td>
+        <td>
+            Der Sonderangebotszeitraum in Bezug auf das Criteo-Merkmal **Sonderangebotszeitraum**.
+        </td>        
+    </tr>
+    <tr>
+        <td>
+            adwords_redirect
+        </td>
+        <td>
+            AdWords Redirect in Bezug auf das Criteo-Merkmal **AdWords Redirect**.
+        </td>        
+    </tr>
 	<tr>
 		<td>
 			excluded_destination
 		</td>
 		<td>
-			<b>Inhalt:</b> Leer.
-		</td>        
+            Ausgeschlossenes Ziel in Bezug auf das Criteo-Merkmal **Ausgeschlossenes Ziel**.
+        </td>        
 	</tr>
-	<tr>
-		<td>
-			adwords_redirect
-		</td>
-		<td>
-			<b>Inhalt:</b> AdWords Redirect in Bezug auf das Criteo-Merkmal **AdWords Redirect**.
-		</td>        
-	</tr>
+    <tr>
+        <td>
+            expiration_​date
+        </td>
+        <td>
+            Das Haltbarkeitsdatum der Variante.
+        </td>        
+    </tr>
 	<tr>
 		<td>
 			unit_pricing_measure
@@ -354,7 +554,7 @@ In der folgenden Tabelle finden Sie Hinweise zu den Einstellungen, Formateinstel
 			unit_pricing_base_measure
 		</td>
 		<td>
-			<b>Inhalt:</b> Die <b>Grundeinheit</b> der Variante in Bezug auf **unit_pricing_measure**.
+			Die <b>Grundeinheit</b> der Variante in Bezug auf **unit_pricing_measure**.
 		</td>        
 	</tr>
 	<tr>
@@ -362,97 +562,41 @@ In der folgenden Tabelle finden Sie Hinweise zu den Einstellungen, Formateinstel
 			energy_efficiency_class
 		</td>
 		<td>
-			<b>Inhalt:</b> Die Energieefizienzklasse in Bezug auf das Criteo-Merkmal **Energieefizienzklasse**.
+			Die Energieefizienzklasse in Bezug auf das Criteo-Merkmal **Energieefizienzklasse**.
 		</td>        
 	</tr>
-	<tr>
-		<td>
-			size_system
-		</td>
-		<td>
-			<b>Inhalt:</b> Das Größensystem in Bezug auf das Criteo-Merkmal **Größensystem**.
-		</td>        
-	</tr>
-	<tr>
-		<td>
-			size_type
-		</td>
-		<td>
-			<b>Inhalt:</b> Das Größensystem in Bezug auf das Criteo-Merkmal **Größensystem**.
-		</td>        
-	</tr>
-	<tr>
-		<td>
-			mobile_link
-		</td>
-		<td>
-			<b>Inhalt:</b> Mobiler Link in Bezug auf das Criteo-Merkmal **Mobiler-Link**.
-		</td>        
-	</tr>
-	<tr>
-		<td>
-			sale_price_effective_date
-		</td>
-		<td>
-			<b>Inhalt:</b> Der Sonderangebotszeitraum in Bezug auf das Criteo-Merkmal **Sonderangebotszeitraum**.
-		</td>        
-	</tr>
-	<tr>
-		<td>
-			adult
-		</td>
-		<td>
-			<b>Inhalt:</b> Leer.
-		</td>        
-	</tr>
-	<tr>
-		<td>
-			custom_label_0
-		</td>
-		<td>
-			<b>Inhalt:</b> Das Benutzerdefinierte Label 0 in Bezug auf das Criteo-Merkmal **Benutzerdefiniertes Label 0**.
-		</td>        
-	</tr>
-	<tr>
-		<td>
-			custom_label_1
-		</td>
-		<td>
-			<b>Inhalt:</b> Das Benutzerdefinierte Label 1 in Bezug auf das Criteo-Merkmal **Benutzerdefiniertes Label 1**.
-		</td>        
-	</tr>
-	<tr>
-		<td>
-			custom_label_2
-		</td>
-		<td>
-			<b>Inhalt:</b> Das Benutzerdefinierte Label 2 in Bezug auf das Criteo-Merkmal **Benutzerdefiniertes Label 2**.
-		</td>        
-	</tr>
-	<tr>
-		<td>
-			custom_label_3
-		</td>
-		<td>
-			<b>Inhalt:</b> Das Benutzerdefinierte Label 3 in Bezug auf das Criteo-Merkmal **Benutzerdefiniertes Label 3**.
-		</td>        
-	</tr>
-	<tr>
-		<td>
-			custom_label_4
-		</td>
-		<td>
-			<b>Inhalt:</b> Das Benutzerdefinierte Label 4 in Bezug auf das Criteo-Merkmal **Benutzerdefiniertes Label 4**.
-		</td>        
-	</tr>
-	<tr>
-		<td>
-			availability_​date
-		</td>
-		<td>
-			<b>Inhalt:</b> Das Erscheinungsdatum der Variante.
-		</td>        
-	</tr>
+    <tr>
+        <td>
+            display_ads_title
+        </td>
+        <td>
+            Die <b>Anzeigentitel</b> der Variante in Bezug auf **Anzeigentitel anzeigen**.
+        </td>        
+    </tr>
+    <tr>
+        <td>
+            display_ads_value
+        </td>
+        <td>
+            Die <b>Anzeigewert</b> der Variante in Bezug auf **Anzeigewert anzeigen**.
+        </td>        
+    </tr>
+    <tr>
+        <td>
+            map_price
+        </td>
+        <td>
+            Leer.
+        </td>        
+    </tr>
+    <tr>
+        <td>
+            map_model
+        </td>
+        <td>
+            Leer.
+        </td>        
+    </tr>
 </table>
 
 ## 4 Lizenz
