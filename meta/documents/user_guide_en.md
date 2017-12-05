@@ -116,6 +116,8 @@ The following table lists details for settings, format settings and recommended 
 
 ## 3 Overview of available columns
 
+Refer to [Criteo](https://support.criteo.com/hc/en-us/articles/207571095-Criteo-Product-Feed-specification) for additional information.
+
 <table>
     <tr>
         <th>
