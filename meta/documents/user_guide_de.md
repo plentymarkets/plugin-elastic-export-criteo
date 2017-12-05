@@ -116,7 +116,7 @@ In der folgenden Tabelle finden Sie Hinweise zu den Einstellungen, Formateinstel
 
 ## 3 Übersicht der verfügbaren Spalten
 
-Zusätzliche Informationen zu den einzelen Spalten sind direkt bei [Criteo](https://support.criteo.com/hc/en-us/articles/207571095-Criteo-Product-Feed-specification) erläutert (nur auf Englisch verfügbar). 
+Zusätzliche Informationen zu den einzelnen Spalten sind direkt bei [Criteo](https://support.criteo.com/hc/en-us/articles/207571095-Criteo-Product-Feed-specification) erläutert (nur auf Englisch verfügbar). 
 
 <table>
     <tr>
