@@ -388,7 +388,7 @@ Zusätzliche Informationen zu den einzelnen Spalten sind direkt bei [Criteo](htt
             seller_id
         </td>
         <td>
-	Das Criteo-Merkmal **Verkäufer-Id**.
+	Das Criteo-Merkmal **Verkäufer-ID**.
         </td>        
     </tr>
 	<tr>
@@ -537,7 +537,7 @@ Zusätzliche Informationen zu den einzelnen Spalten sind direkt bei [Criteo](htt
 	</tr>
     <tr>
         <td>
-            expiration_​date
+            expiration_date
         </td>
         <td>
             Das Haltbarkeitsdatum der Variante.
