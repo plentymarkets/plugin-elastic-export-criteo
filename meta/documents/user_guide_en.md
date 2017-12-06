@@ -140,7 +140,7 @@ Refer to [Criteo](https://support.criteo.com/hc/en-us/articles/207571095-Criteo-
 			title
 		</td>
 		<td>
-			According to the format setting <b>Item Name</b>.
+			According to the format setting <b>Item name</b>.
 		</td>        
 	</tr>
 	<tr>
@@ -236,7 +236,7 @@ Refer to [Criteo](https://support.criteo.com/hc/en-us/articles/207571095-Criteo-
             adult
         </td>
         <td>
-            The adult status according to the Criteo property **adult**.
+		The adult status according to the Criteo property **adult**. Possible values <b>yes</b> and <b>no</b>.
         </td>        
     </tr>
 	<tr>
@@ -292,7 +292,7 @@ Refer to [Criteo](https://support.criteo.com/hc/en-us/articles/207571095-Criteo-
 			condition
 		</td>
 		<td>
-			The condition of the item. According to <b>Item » Edit item » Global » Basic Settings » Condition for API</b>.
+			The condition of the item. According to <b>Item » Edit item » Global » Basic Settings » Condition for API</b>. Possible values <b>new</b>, <b>refurbished</b>, <b>used</b>.
 		</td>        
 	</tr>
 	<tr>
@@ -300,7 +300,7 @@ Refer to [Criteo](https://support.criteo.com/hc/en-us/articles/207571095-Criteo-
             item_group_id
         </td>
         <td>
-            The <b>Item ID</b> of the variation.
+            The <b>item ID</b> of the variation.
         </td>        
     </tr>
 	<tr>
@@ -316,7 +316,7 @@ Refer to [Criteo](https://support.criteo.com/hc/en-us/articles/207571095-Criteo-
             gender
         </td>
         <td>
-            The gender according to the Criteo property **gender**.
+		The gender according to the Criteo property **gender**. Possible values <b>female</b>, <b>male</b> and <b>unisex</b>.
         </td>        
     </tr>
     <tr>
@@ -324,7 +324,7 @@ Refer to [Criteo](https://support.criteo.com/hc/en-us/articles/207571095-Criteo-
             age_group
         </td>
         <td>
-            The age group according to the Criteo property **age group**.
+            The age group according to the Criteo property **age group**. Possible values <b>newborn</b>, <b>infant</b>, <b>toddler</b>, <b>kids</b> and <b>adult</b>.
         </td>        
     </tr>
     <tr>
@@ -364,7 +364,7 @@ Refer to [Criteo](https://support.criteo.com/hc/en-us/articles/207571095-Criteo-
             size_system
         </td>
         <td>
-            The size system according to the Criteo property **size system**.
+            The size system according to the Criteo property **size system**. Possible values <b>US</b>, <b>UK</b>, <b>EU</b>, <b>UK</b>, <b>DE</b>, <b>FR</b>, <b>JP</b>, <b>CN</b>, <b>IT</b>, <b>BR</b>, <b>MEX</b> and <b>AU</b>.
         </td>        
     </tr>
     <tr>
@@ -372,7 +372,7 @@ Refer to [Criteo](https://support.criteo.com/hc/en-us/articles/207571095-Criteo-
             cross_sellers_product_id
         </td>
         <td>
-            The cross sellers product id according to the Criteo property **cross sellers product id**.
+            The cross sellers product ID according to the Criteo property **cross sellers product ID**.
         </td>        
     </tr>
     <tr>
@@ -404,7 +404,7 @@ Refer to [Criteo](https://support.criteo.com/hc/en-us/articles/207571095-Criteo-
 			shipping_weight
 		</td>
 		<td>
-			The shipping weigtht of the variation.
+			The weigtht of the variation.
 		</td>        
 	</tr>
     <tr>
@@ -412,7 +412,7 @@ Refer to [Criteo](https://support.criteo.com/hc/en-us/articles/207571095-Criteo-
             shipping_height
         </td>
         <td>
-            The shipping height of the variation.
+            The height of the variation.
         </td>        
     </tr>
     <tr>
@@ -420,7 +420,7 @@ Refer to [Criteo](https://support.criteo.com/hc/en-us/articles/207571095-Criteo-
             shipping_width
         </td>
         <td>
-            The shipping width of the variation.
+            The width of the variation.
         </td>        
     </tr>
     <tr>
@@ -428,7 +428,7 @@ Refer to [Criteo](https://support.criteo.com/hc/en-us/articles/207571095-Criteo-
             shipping_length
         </td>
         <td>
-            The shipping length of the variation.
+            The length of the variation.
         </td>        
     </tr>
     <tr>
@@ -460,7 +460,7 @@ Refer to [Criteo](https://support.criteo.com/hc/en-us/articles/207571095-Criteo-
             promotion_id
         </td>
         <td>
-            The promotion id according to the Criteo property **promotion id**.
+            The promotion ID according to the Criteo property **promotion id**.
         </td>        
     </tr>
     <tr>
@@ -537,7 +537,7 @@ Refer to [Criteo](https://support.criteo.com/hc/en-us/articles/207571095-Criteo-
 	</tr>
     <tr>
         <td>
-            expiration_​date
+            expiration_date
         </td>
         <td>
             Empty.
@@ -548,7 +548,7 @@ Refer to [Criteo](https://support.criteo.com/hc/en-us/articles/207571095-Criteo-
             unit_pricing_measure
         </td>
         <td>
-            The <b>Unit</b> of the variation.
+            The <b>unit</b> of the variation.
         </td>        
     </tr>
     <tr>
