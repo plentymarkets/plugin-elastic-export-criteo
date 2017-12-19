@@ -1,8 +1,6 @@
 
 # Criteo plugin user guide
 
-<div class="container-toc"></div>
-
 ## 1 Registering with Criteo
 
 Criteo is a personalized retargeting company that works with Internet retailers to serve personalized online display advertisements to consumers who have previously visited the advertiser's website.
@@ -14,584 +12,99 @@ The plugin Elastic Export is required to use this format.
 
 Refer to the [Exporting data formats for price search engines](https://knowledge.plentymarkets.com/en/basics/data-exchange/exporting-data#30) page of the manual for further details about the individual format settings.
 
+Creating a new export format:
+
+1. Go to **Data** » **Elastic export**.
+2. Click on **New export**.
+3. Carry out the settings as desired. Pay attention to the information given in table 1.
+4. **Save** the settings.
+→ The export format will be given an ID and it will appear in the overview within the **Exports** tab.
+
 The following table lists details for settings, format settings and recommended item filters for the format **Criteo-Plugin**.
 
-<table>
-    <tr>
-        <th>
-            Settings
-        </th>
-        <th>
-            Explanation
-        </th>
-    </tr>
-    <tr>
-        <td class="th" colspan="2">
-            Settings
-        </td>
-    </tr>
-    <tr>
-        <td>
-            Format
-        </td>
-        <td>
-            Choose <b>Criteo-Plugin</b>.
-        </td>        
-    </tr>
-    <tr>
-        <td>
-            Provisioning
-        </td>
-        <td>
-            Choose <b>URL</b>.
-        </td>        
-    </tr>
-    <tr>
-        <td>
-            File name
-        </td>
-        <td>
-            The file name must have the ending <b>.csv</b> for Criteo to be able to import the file successfully.
-        </td>        
-    </tr>
-    <tr>
-        <td class="th" colspan="2">
-            Item filter
-        </td>
-    </tr>
-    <tr>
-        <td>
-            Active
-        </td>
-        <td>
-            Choose <b>active</b>.
-        </td>        
-    </tr>
-    <tr>
-        <td>
-            Markets
-        </td>
-        <td>
-            Choose one or multiple order referrer. The chosen order referrer has to be active at the variation for the item to be exported.
-        </td>        
-    </tr>
-    <tr>
-        <td class="th" colspan="2">
-            Format settings
-        </td>
-    </tr>
-    <tr>
-        <td>
-            Order referrer
-        </td>
-        <td>
-            Choose the order referrer that should be assigned during the order import.
-        </td>        
-    </tr>
-    <tr>
-        <td>
-            Preview text
-        </td>
-        <td>
-            This option is not relevant for this format.
-        </td>        
-    </tr>
-    <tr>
-        <td>
-            Offer price
-        </td>
-        <td>
-            This option is not relevant for this format.
-        </td>        
-    </tr>
-    <tr>
-        <td>
-            VAT note
-        </td>
-        <td>
-            This option is not relevant for this format.
-        </td>        
-    </tr>
-</table>
+| Settings                      | Explanation |
+| ---                           | --- |
+| Settings                      |     |
+| Format                        | Choose **Criteo-Plugin**. |
+| Provisioning                  | Choose **URL**. |
+| File name                     | The file name must have the ending **.csv** for Criteo to be able to import the file successfully. |
+| Item filter                   |     |
+| Active                        | Choose **Aktiv**. |
+| Markets                       | Choose one or multiple order referrer. The chosen order referrer has to be active at the variation for the item to be exported. |
+| Format settings               |     |
+| Order referrer                | Choose the order referrer that should be assigned during the order import. |
+| Preview text                  | This option is not relevant for this format. |
+| Offer price                   | This option is not relevant for this format. |
+| VAT note                      | This option is not relevant for this format. |
+
+_Tab. 1: Settings for the data format **Criteo-Plugin**_ 
 
 ## 3 Overview of available columns
 
 Refer to [Criteo](https://support.criteo.com/hc/en-us/articles/207571095-Criteo-Product-Feed-specification) for additional information.
 
-<table>
-    <tr>
-        <th>
-            Column name
-        </th>
-        <th>
-            Explanation
-        </th>
-    </tr>
-    <tr>
-		<td>
-			id
-		</td>
-		<td>
-			The Criteo <b>SKU</b> for the variation.
-		</td>        
-	</tr>
-	<tr>
-		<td>
-			title
-		</td>
-		<td>
-			According to the format setting <b>Item name</b>.
-		</td>        
-	</tr>
-	<tr>
-		<td>
-			description
-		</td>
-		<td>
-			According to the format setting <b>Description</b>.
-		</td>        
-	</tr>
-	<tr>
-		<td>
-			google_product_category
-		</td>
-		<td>
-			According to the setting <b>Settings » Markets » Google » Google Shopping Int.</b> the Google Shopping category for the default category.
-		</td>        
-	</tr>
-	<tr>
-        <td>
-            link
-        </td>
-        <td>
-            The <b>URL path</b> of the item depending on the chosen <b>client</b> in the format settings.
-        </td>        
-    </tr>
-    <tr>
-        <td>
-            image_link
-        </td>
-        <td>
-            The image url. Variation images are prioritizied over item images.
-        </td>        
-    </tr>
-    <tr>
-        <td>
-            additional_image_link
-        </td>
-        <td>
-            Additional comma separated image URLs for up to 10 images. Variation images are prioritizied over item images.
-        </td>        
-    </tr>
-    <tr>
-        <td>
-            availability
-        </td>
-        <td>
-            The <b>name of the item availability</b> under <b>Settings » Item » Item availability</b> or the translation according to the format setting <b>Item availability</b>.
-        </td>        
-    </tr>
-    <tr>
-        <td>
-            price
-        </td>
-        <td>
-            The <b>sales price</b> of the variation.
-        </td>        
-    </tr>
-    <tr>
-        <td>
-            sale_price
-        </td>
-        <td>
-            The <b>special price</b> of the variation.
-        </td>        
-    </tr>
-    <tr>
-        <td>
-            gtin
-        </td>
-        <td>
-            According to the format setting <b>Barcode</b>.
-        </td>        
-    </tr>
-    <tr>
-        <td>
-            mpn
-        </td>
-        <td>
-            The <b>Model</b> of the variation.
-        </td>        
-    </tr>
-    <tr>
-        <td>
-            brand
-        </td>
-        <td>
-            The <b>name of the manufacturer</b> of the item. The <b>external name</b> from the menu <b>Settings » Items » Manufacturer</b> will be preferred if existing.
-        </td>        
-    </tr>
-    <tr>
-        <td>
-            adult
-        </td>
-        <td>
-		The adult status according to the Criteo property **adult**. Possible values <b>yes</b> and <b>no</b>.
-        </td>        
-    </tr>
-	<tr>
-		<td>
-			product_type
-		</td>
-		<td>
-			The names of the default category.
-		</td>        
-	</tr>
-    <tr>
-        <td>
-            product_type_key
-        </td>
-        <td>
-            Empty.
-        </td>        
-    </tr>
-    <tr>
-        <td>
-            number_of_reviews
-        </td>
-        <td>
-            Empty.
-        </td>        
-    </tr>
-    <tr>
-        <td>
-            product_rating
-        </td>
-        <td>
-            Empty.
-        </td>        
-    </tr>
-    <tr>
-        <td>
-            filters
-        </td>
-        <td>
-            Empty.
-        </td>        
-    </tr>
-    <tr>
-        <td>
-            mobile_link
-        </td>
-        <td>
-            The mobile link according to the Criteo property **mobile link**.
-        </td>        
-    </tr>
-	<tr>
-		<td>
-			condition
-		</td>
-		<td>
-			The condition of the item. According to <b>Item » Edit item » Global » Basic Settings » Condition for API</b>. Possible values <b>new</b>, <b>refurbished</b>, <b>used</b>.
-		</td>        
-	</tr>
-	<tr>
-        <td>
-            item_group_id
-        </td>
-        <td>
-            The <b>item ID</b> of the variation.
-        </td>        
-    </tr>
-	<tr>
-		<td>
-			color
-		</td>
-		<td>
-			The <b>color</b> of the variation according to the attribute or property. Properties are prioritizied.
-		</td>        
-	</tr>
-    <tr>
-        <td>
-            gender
-        </td>
-        <td>
-		The gender according to the Criteo property **gender**. Possible values <b>female</b>, <b>male</b> and <b>unisex</b>.
-        </td>        
-    </tr>
-    <tr>
-        <td>
-            age_group
-        </td>
-        <td>
-            The age group according to the Criteo property **age group**. Possible values <b>newborn</b>, <b>infant</b>, <b>toddler</b>, <b>kids</b> and <b>adult</b>.
-        </td>        
-    </tr>
-    <tr>
-        <td>
-            material
-        </td>
-        <td>
-            The <b>material</b> of the variation according to the attribute or property. Properties are prioritizied.
-        </td>        
-    </tr>
-    <tr>
-        <td>
-            pattern
-        </td>
-        <td>
-            The <b>pattern</b> of the variation according to the attribute or property. Properties are prioritizied.
-        </td>        
-    </tr>
-	<tr>
-		<td>
-			size
-		</td>
-		<td>
-			The <b>size</b> of the variation according to the attribute or property. Properties are prioritizied.
-		</td>        
-	</tr>
-    <tr>
-        <td>
-            size_type
-        </td>
-        <td>
-            The size type according to the Criteo property **size type**.
-        </td>        
-    </tr>
-    <tr>
-        <td>
-            size_system
-        </td>
-        <td>
-            The size system according to the Criteo property **size system**. Possible values <b>US</b>, <b>UK</b>, <b>EU</b>, <b>UK</b>, <b>DE</b>, <b>FR</b>, <b>JP</b>, <b>CN</b>, <b>IT</b>, <b>BR</b>, <b>MEX</b> and <b>AU</b>.
-        </td>        
-    </tr>
-    <tr>
-        <td>
-            cross_sellers_product_id
-        </td>
-        <td>
-            The cross sellers product ID according to the Criteo property **cross sellers product ID**.
-        </td>        
-    </tr>
-    <tr>
-        <td>
-            seller_name
-        </td>
-        <td>
-            The seller name according to the Criteo property **seller name**.
-        </td>        
-    </tr>
-    <tr>
-        <td>
-            seller_id
-        </td>
-        <td>
-            The seller id according to the Criteo property **seller id**.
-        </td>        
-    </tr>
-	<tr>
-		<td>
-			shipping
-		</td>
-		<td>
-			According to the format setting <b>Shipping costs</b>.
-		</td>        
-	</tr>
-	<tr>
-		<td>
-			shipping_weight
-		</td>
-		<td>
-			The weigtht of the variation.
-		</td>        
-	</tr>
-    <tr>
-        <td>
-            shipping_height
-        </td>
-        <td>
-            The height of the variation.
-        </td>        
-    </tr>
-    <tr>
-        <td>
-            shipping_width
-        </td>
-        <td>
-            The width of the variation.
-        </td>        
-    </tr>
-    <tr>
-        <td>
-            shipping_length
-        </td>
-        <td>
-            The length of the variation.
-        </td>        
-    </tr>
-    <tr>
-        <td>
-            shipping_label
-        </td>
-        <td>
-            The shipping label of the variation.
-        </td>        
-    </tr>
-    <tr>
-        <td>
-            multipack
-        </td>
-        <td>
-            Empty.
-        </td>        
-    </tr>
-    <tr>
-        <td>
-            is_bundle
-        </td>
-        <td>
-            Empty.
-        </td>        
-    </tr>
-    <tr>
-        <td>
-            promotion_id
-        </td>
-        <td>
-            The promotion ID according to the Criteo property **promotion id**.
-        </td>        
-    </tr>
-    <tr>
-        <td>
-            promo_text
-        </td>
-        <td>
-            The promotion text according to the Criteo property **promotion text**.
-        </td>        
-    </tr>
-	<tr>
-		<td>
-			custom_label_0
-		</td>
-		<td>
-			The custom label 0 according to the Criteo property **Custom label 0**.
-		</td>        
-	</tr>
-	<tr>
-		<td>
-			custom_label_1
-		</td>
-		<td>
-			The custom label 1 according to the Criteo property **Custom label 1**.
-		</td>        
-	</tr>
-	<tr>
-		<td>
-			custom_label_2
-		</td>
-		<td>
-			The custom label 2 according to the Criteo property **Custom label 2**.
-		</td>        
-	</tr>
-	<tr>
-		<td>
-			custom_label_3
-		</td>
-		<td>
-			The custom label 3 according to the Criteo property **Custom label 3**.
-		</td>        
-	</tr>
-	<tr>
-		<td>
-			custom_label_4
-		</td>
-		<td>
-			The custom label 4 according to the Criteo property **Custom label 4**.
-		</td>        
-	</tr>
-    <tr>
-        <td>
-            sale_price_effective_date
-        </td>
-        <td>
-            The sale price effective date according to the Criteo property **sale price effective date**.
-        </td>        
-    </tr>
-    <tr>
-        <td>
-            adwords_redirect
-        </td>
-        <td>
-            AdWords redirect according to the Criteo property **AdWords Redirect**.
-        </td>        
-    </tr>
-	<tr>
-		<td>
-			excluded_destination
-		</td>
-		<td>
-			The excluded destination according to the Criteo property **excluded destination**.
-		</td>        
-	</tr>
-    <tr>
-        <td>
-            expiration_date
-        </td>
-        <td>
-            Empty.
-        </td>        
-    </tr>
-    <tr>
-        <td>
-            unit_pricing_measure
-        </td>
-        <td>
-            The <b>unit</b> of the variation.
-        </td>        
-    </tr>
-    <tr>
-        <td>
-            unit_pricing_base_measure
-        </td>
-        <td>
-            The <b>base unit</b> of the variation according to **unit_pricing_measure**.
-        </td>        
-    </tr>
-    <tr>
-        <td>
-            display_ads_title
-        </td>
-        <td>
-            The display ads title according to the Criteo property **display ads title**.
-        </td>        
-    </tr>
-    <tr>
-        <td>
-            display_ads_value
-        </td>
-        <td>
-            The display ads value according to the Criteo property **display ads value**.
-        </td>        
-    </tr>
-    <tr>
-        <td>
-            map_price
-        </td>
-        <td>
-            Empty.
-        </td>        
-    </tr>
-    <tr>
-        <td>
-            map_model
-        </td>
-        <td>
-            Empty.
-        </td>        
-    </tr>
-</table>
+
+| Column name                   | Explanation |
+| ---                           | --- |
+| id                            | The Criteo **SKU** for the variation. |
+| title                         | According to the format setting **Item name**. |
+| description                   | According to the format setting **Description**. |
+| google_product_category       | According to the setting **Settings** » **Markets** » **Google** » **Google Shopping Int.** the Google Shopping category for the default category. |
+| link                          | The **URL path** of the item depending on the chosen **client** in the format settings. |
+| image_link                    | The **image url**. Variation images are prioritized over item images. |
+| additional_image_link         | Additional comma separated image URLs for up to 10 images. Variation images are prioritized over item images. |
+| availability                  | The **name of the item availability** under **Settings** » **Item** » **Item availability** or the translation according to the format setting **Item availability**. |
+| price                         | The **sales price** of the variation. |
+| sale_price                    | The **special price** of the variation. |
+| gtin                          | According to the format setting **Barcode**. |
+| mpn                           | The **Model** of the variation. |
+| brand                         | The **name of the manufacturer** of the item. The **external name** from the menu **Settings** » **Items** » **Manufacturer** will be preferred if existing. |
+| adult                         | The adult status according to the Criteo property **adult**. Possible values **yes** and **no**. |
+| product_type                  | The **name of the default category**. |
+| product_type_key              | Empty. |
+| number_of_ratings             | Empty. |
+| product_rating                | Empty. |
+| filters                       | Empty. |
+| mobile_link                   | The mobile link according to the Criteo property **mobile link**. |
+| condition                     | The condition of the item. According to **Item** » **Edit item** » **Global** » **Basic Settings** » **Condition for API**. Possible values **new**, **refurbished**, **used**. |
+| item_group_id                 | The **item ID** of the variation. |
+| color                         | The **color** of the variation according to the attribute or property. Properties are prioritized. |
+| gender                        | The gender according to the Criteo property **gender**. Possible values **female**, **male** and **unisex**. |
+| age_group                     | The age group according to the Criteo property **age group**. Possible values **newborn**, **infant**, **toddler**, **kids** and **adult**. |
+| material                      | The **material** of the variation according to the attribute or property. Properties are prioritized. |
+| pattern                       | The **pattern** of the variation according to the attribute or property. Properties are prioritized. |
+| size                          | The **size** of the variation according to the attribute or property. Properties are prioritized. |
+| size_type                     | The size type according to the Criteo property **size type**. |
+| size_system                   | The size system according to the Criteo property **size system**. Possible values **US**, **UK**, **EU**, **UK**, **DE**, **FR**, **JP**, **CN**, **IT**, **BR**, **MEX** and **AU**. |
+| cross_sellers_product_id      | The cross sellers product ID according to the Criteo property **cross sellers product ID**. |
+| seller_name                   | The seller name according to the Criteo property **seller name**. |
+| seller_id                     | The seller id according to the Criteo property **seller id**. |
+| shipping                      | According to the format setting **Shipping costs**. |
+| shipping_weight               | The **weight** of the variation. |
+| shipping_height               | The **height** of the variation. |
+| shipping_width                | The **width** of the variation. |
+| shipping_label                | The **label** of the variation. |
+| multipack                     | Empty. |
+| is_bundle                     | Empty. |
+| promotion_id                  | The promotion ID according to the Criteo property **promotion id**. |
+| promo_text                    | The promotion text according to the Criteo property **promotion text**. |
+| custom_label_0                | The custom label 0 according to the Criteo property **Custom label 0**. |
+| custom_label_1                | The custom label 0 according to the Criteo property **Custom label 1**. |
+| custom_label_2                | The custom label 0 according to the Criteo property **Custom label 2**. |
+| custom_label_3                | The custom label 0 according to the Criteo property **Custom label 3**. |
+| custom_label_4                | The custom label 0 according to the Criteo property **Custom label 4**. |
+| sale_price_effective_date     | The sale price effective date according to the Criteo property **sale price effective date**. |
+| adwords_redirect              | AdWords redirect according to the Criteo property **AdWords Redirect**. |
+| excluded_destination          | The excluded destination according to the Criteo property **excluded destination**. |
+| expiration_date               | Empty. |
+| unit_pricing_measure          | The **unit** of the variation. |
+| unit_pricing_base_measure     | The **base unit** of the variation according to **unit_pricing_measure**. |
+| display_ads_title             | The display ads title according to the Criteo property **display ads title**. |
+| display_ads_value             | The display ads value according to the Criteo property **display ads value**. |
+| map_price                     | Empty. |
+| map_model                     | Empty. |
+
+_Tab. 2: Export file for **Criteo**_
 
 ## 4 License
 

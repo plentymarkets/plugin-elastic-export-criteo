@@ -13,6 +13,7 @@ Um dieses Format nutzen zu können, benötigen Sie das Plugin Elastic Export.
 Auf der Handbuchseite [Daten exportieren](https://knowledge.plentymarkets.com/basics/datenaustausch/daten-exportieren#30) werden die einzelnen Formateinstellungen beschrieben.
 
 Neues Exportformat erstellen:
+
 1. Öffnen Sie das Menü **Daten** » **Elastischer Export**.
 2. Klicken Sie auf **Neuer Export**.
 3. Nehmen Sie die Einstellungen vor. Beachten Sie dazu die Erläuterungen in Tabelle 1.
@@ -49,7 +50,7 @@ Zusätzliche Informationen zu den einzelnen Spalten sind direkt bei [Criteo](htt
 | description                   | Entsprechend der Formateinstellung **Beschreibung**. |
 | google_product_category       | Entsprechend der Einstellung **Einstellungen** » **Märkte** » **Google** » **Google Shopping Int.** die Google Shopping Kategorie der Standardkategorie. |
 | link                          | Der **URL-Pfad** des Artikels abhängig vom gewählten **Mandanten** in den Formateinstellungen. |
-| image_link                    | URL des Bildes. Variantenbiler werden vor Artikelbildern priorisiert. |
+| image_link                    | **URL des Bildes**. Variantenbiler werden vor Artikelbildern priorisiert. |
 | additional_image_link         | Zusätzliche kommagetrennte URLs für bis zu 10 zusätzliche Bilder. Variantenbiler werden vor Artikelbildern priorisiert. |
 | availability                  | Der **Name der Artikelverfügbarkeit** unter **Einstellungen** » **Artikel** » **Artikelverfügbarkeit** oder die Übersetzung gemäß der Formateinstellung **Artikelverfügbarkeit überschreiben**. |
 | price                         | Der **Verkaufspreis**. |
@@ -94,7 +95,7 @@ Zusätzliche Informationen zu den einzelnen Spalten sind direkt bei [Criteo](htt
 | sale_price_effective_date     | Das Criteo-Merkmal **Sonderangebotszeitraum**. |
 | adwords_redirect              | Das Criteo-Merkmal **AdWords Redirect**. |
 | excluded_destination          | Das Criteo-Merkmal **Ausgeschlossenes Ziel**. |
-| expiration_date               | Das **Haltbarkeitsdatum** der Variante. |
+| expiration_date               | Leer. |
 | unit_pricing_measure          | Die **Einheit** der Variante. |
 | unit_pricing_base_measure     | Die **Grundeinheit** der Variante in Bezug auf **unit_pricing_measure**. |
 | display_ads_title             | Die **Anzeigentitel** der Variante in Bezug auf **Anzeigentitel anzeigen**. |
