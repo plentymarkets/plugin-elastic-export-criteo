@@ -8,9 +8,9 @@ Um das Plugin für Criteo einzurichten, registrieren Sie sich zunächst als Hän
 
 ## 2 Elastic Export Criteo-Plugin in plentymarkets einrichten
 
-Um dieses Format nutzen zu können, benötigen Sie das Plugin Elastic Export.
+Mit der Installation dieses Plugins erhalten Sie das Exportformat <b>Criteo-Plugin</b>, mit dem Sie Daten über den elastischen Export zu Criteo übertragen. Um dieses Format für den elastischen Export nutzen zu können, installieren Sie zunächst das Plugin <b>Elastic Export</b> aus dem plentyMarketplace, wenn noch nicht geschehen. 
 
-Auf der Handbuchseite [Daten exportieren](https://knowledge.plentymarkets.com/basics/datenaustausch/daten-exportieren#30) werden die einzelnen Formateinstellungen beschrieben.
+Sobald beide Plugins im Ihrem System installiert sind, kann das Exportformat <b>Criteo-Plugin</b> erstellt werden. Mehr Informationen finden Sie auch auf der Handbuchseite [Daten exportieren](https://www.plentymarkets.eu/handbuch/datenaustausch/daten-exportieren/#4).
 
 Neues Exportformat erstellen:
 
@@ -22,20 +22,35 @@ Neues Exportformat erstellen:
 
 In der folgenden Tabelle finden Sie Hinweise zu den Einstellungen, Formateinstellungen und empfohlenen Artikelfiltern für das Format **Criteo-Plugin**.
 
-| Einstellung                   | Erläuterung |
-| ---                           | --- |
-| Einstellungen                 |     |
+| **Einstellung**   |      **Erläuterung**| 
+|----------|-------------|
+| Name                          | Name eingeben. Unter diesem Namen erscheint das Exportformat in der Übersicht im Tab **Exporte**. |
+| Typ                           | Typ **Artikel</b> aus dem Dropdown-Menü wählen. |
 | Format                        | **Criteo-Plugin** wählen. |
+| Limit                         | Zahl eingeben. Wenn mehr als 9999 Datensätze an die Preissuchmaschine übertragen werden sollen, wird die Ausgabedatei wird für 24 Stunden nicht noch einmal neu generiert, um Ressourcen zu sparen. Wenn mehr mehr als 9999 Datensätze benötigt werden, muss die Option **Cache-Datei generieren** aktiv sein. |
+| Cache-Datei generieren        | Häkchen setzen, wenn mehr als 9999 Datensätze an die Preissuchmaschine übertragen werden sollen. Um eine optimale Performance des elastischen Exports zu gewährleisten, darf diese Option bei maximal 20 Exportformaten aktiv sein. |
 | Bereitstellung                | **URL** wählen. |
+| Token, URL                    | Wenn unter **Bereitstellung** die Option **URL** gewählt wurde, auf **Token generieren** klicken. Der Token wird dann automatisch eingetragen. Die URL wird automatisch eingetragen, wenn unter **Token** der Token generiert wurde. |
 | Dateiname                     | Der Dateiname muss auf **.csv** oder **.txt** enden, damit Criteo die Datei erfolgreich importieren kann. |
-| Artikelfilter                 |     |
-| Aktiv                         | **Aktiv** wählen. |
-| Märkte                        | Eine oder mehrere Auftragsherkünfte wählen. Die gewählten Auftragsherkünfte müssen an der Variante aktiviert sein, damit der Artikel exportiert wird. |
-| Formateinstellungen           |     |
+| Artikelfilter hinzufügen      | Artikelfilter aus dem Dropdown-Menü wählen und auf **Hinzufügen** klicken. Standardmäßig sind keine Filter voreingestellt. Es ist möglich, alle Artikelfilter aus dem Dropdown-Menü nacheinander hinzuzufügen. **Varianten** = **Alle übertragen** oder **Nur Hauptvarianten übertragen** wählen. **Märkte** = Einen, mehrere oder **ALLE** Märkte wählen. Die Verfügbarkeit muss für alle hier gewählten Märkte am Artikel hinterlegt sein. Andernfalls findet kein Export statt. **Währung** = Währung wählen. **Kategorie** = Aktivieren, damit der Artikel mit Kategorieverknüpfung übertragen wird. Es werden nur Artikel, die dieser Kategorie zugehören, übertragen. **Bild** = Aktivieren, damit der Artikel mit Bild übertragen wird. Es werden nur Artikel mit Bildern übertragen. **Mandant** = Mandant wählen. **Bestand** = Wählen, welche Bestände exportiert werden sollen. **Markierung 1 - 2** = Markierung wählen. **Hersteller** = Einen, mehrere oder **ALLE** Hersteller wählen. **Aktiv** = Nur aktive Varianten werden übertragen. |
+| Produkt-URL                   | Wählen, ob die URL des Artikels oder der Variante an das Preisportal übertragen wird. Varianten URLs können nur in Kombination mit dem Ceres Webshop übertragen werden. |
+| Mandant                       | Mandant wählen. Diese Einstellung wird für den URL-Aufbau verwendet. |
+| URL-Parameter                 | Suffix für die Produkt-URL eingeben, wenn dies für den Export erforderlich ist. Die Produkt-URL wird dann um die eingegebene Zeichenkette erweitert, wenn weiter oben die Option **übertragen** für die Produkt-URL aktiviert wurde. |
 | Auftragsherkunft              | Die Auftragsherkunft wählen, die beim Auftragsimport zugeordnet werden soll. |
+| Marktplatzkonto               | Marktplatzkonto aus dem Dropdown-Men wählen. Die Produkt-URL wird um die gewählte Auftragsherkunft erweitert, damit die Verkäufe später analysiert werden können. |
+| Sprache                       | Sprache aus dem Dropdown-Menü wählen. |
+| Artikelname                   | **Name 1**, **Name 2** oder **Name 3** wählen. Die Namen sind im Tab **Texte** eines Artikels gespeichert. Im Feld **Maximale Zeichenlänge (def. Text)** optional eine Zahl eingeben, wenn die Preissuchmaschine eine Begrenzung der Länge des Artikelnamen beim Export vorgibt. |
 | Vorschautext                  | Diese Option ist für dieses Format nicht relevant. |
+| Beschreibung                  | Wählen, welcher Text als Beschreibungstext übertragen werden soll.<br /> Im Feld **Maximale Zeichenlänge (def. Text)** optional eine Zahl eingeben, wenn die Preissuchmaschine eine Begrenzung der Länge der Beschreibung beim Export vorgibt.Option **HTML-Tags entfernen** aktivieren, damit die HTML-Tags beim Export entfernt werden. Im Feld **Erlaubte HTML-Tags, kommagetrennt (def. Text)** optional die HTML-Tags eingeben, die beim Export erlaubt sind. Wenn mehrere Tags eingegeben werden, mit Komma trennen. |
+| Zielland                      | Zielland aus dem Dropdown-Menü wählen. |
+| Barcode                       | ASIN, ISBN oder eine EAN aus dem Dropdown-Menü wählen. Der gewählte Barcode muss mit der oben gewählten Auftragsherkunft verknüpft sein. Andernfalls wird der Barcode nicht exportiert. |
+| Bild                          | Position 0</b> oder **Erstes Bild** wählen, um dieses Bild zu exportieren. **Position 0** = Ein Bild mit der Position 0 wird übertragen. <br />**Erstes Bild** = Das erste Bild wird übertragen. Position des Energieetikettes eintragen. Alle Bilder die als Energieetikette übertragen werden sollen, müssen diese Position haben. |
+| Angebotspreis                 | Aktivieren, um den Angebotspreis zu übertragen. |
 | UVP                           | Diese Option ist für dieses Format nicht relevant. |
+| Versandkosten                 | Aktivieren, damit die Versandkosten aus der Konfiguration übernommen werden. Wenn die Option aktiviert ist, stehen in den beiden Dropdown-Menüs Optionen für die Konfiguration und die Zahlungsart zur Verfügung. Option **Pauschale Versandkosten übertragen** aktivieren, damit die pauschalen Versandkosten übertragen werden. Wenn diese Option aktiviert ist, muss im Feld darunter ein Betrag eingegeben werden. |
 | MwSt.-Hinweis                 | Diese Option ist für dieses Format nicht relevant. |
+| Artikelverfügbarkeit          | Option **überschreiben** aktivieren und in die Felder **1** bis **10**, die die ID der Verfügbarkeit darstellen, Artikelverfügbarkeiten< eintragen. Somit werden die Artikelverfügbarkeiten, die im Menü **System » Artikel » Verfügbarkeit** eingestellt wurden, überschrieben. |
+
 
 _Tab. 1: Einstellungen für das Datenformat **Criteo-Plugin**_ 
 
