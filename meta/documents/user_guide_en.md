@@ -8,9 +8,9 @@ Before you can transfer your export format, you will have to register with Crite
 
 ## 2 Setting up the data format Criteo-Plugin in plentymarkets
 
-By installing this plugin yo will receive the export format <b>Criteo-Plugin</b>. Use this format to exchange data between plentymarkets and Criteo. It is required to install the Plugin Elastic export from the plentyMarketplace first before you can use the format <b>Criteo-Plugin</b> in plentymarkets.
+By installing this plugin yo will receive the export format **Criteo-Plugin**. Use this format to exchange data between plentymarkets and Criteo. It is required to install the Plugin Elastic export from the plentyMarketplace first before you can use the format <b>Criteo-Plugin</b> in plentymarkets.
 
-Once both plugins are installed, you can create the export format <b>Criteo-Plugin</b>. Refer to the [Exporting data formats for price search engines](https://knowledge.plentymarkets.com/en/basics/data-exchange/exporting-data#30) page of the manual for further details about the individual format settings.
+Once both plugins are installed, you can create the export format **Criteo-Plugin**. Refer to the [Exporting data formats for price search engines](https://knowledge.plentymarkets.com/en/basics/data-exchange/exporting-data#30) page of the manual for further details about the individual format settings.
 
 Creating a new export format:
 
