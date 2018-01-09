@@ -8,9 +8,9 @@ Um das Plugin für Criteo einzurichten, registrieren Sie sich zunächst als Hän
 
 ## 2 Elastic Export Criteo-Plugin in plentymarkets einrichten
 
-Mit der Installation dieses Plugins erhalten Sie das Exportformat <b>Criteo-Plugin</b>, mit dem Sie Daten über den elastischen Export zu Criteo übertragen. Um dieses Format für den elastischen Export nutzen zu können, installieren Sie zunächst das Plugin <b>Elastic Export</b> aus dem plentyMarketplace, wenn noch nicht geschehen. 
+Mit der Installation dieses Plugins erhalten Sie das Exportformat **Criteo-Plugin**, mit dem Sie Daten über den elastischen Export zu Criteo übertragen. Um dieses Format für den elastischen Export nutzen zu können, installieren Sie zunächst das Plugin **Elastic Export** aus dem plentyMarketplace, wenn noch nicht geschehen. 
 
-Sobald beide Plugins im Ihrem System installiert sind, kann das Exportformat <b>Criteo-Plugin</b> erstellt werden. Mehr Informationen finden Sie auch auf der Handbuchseite [Daten exportieren](https://www.plentymarkets.eu/handbuch/datenaustausch/daten-exportieren/#4).
+Sobald beide Plugins im Ihrem System installiert sind, kann das Exportformat **Criteo-Plugin** erstellt werden. Mehr Informationen finden Sie auch auf der Handbuchseite [Daten exportieren](https://www.plentymarkets.eu/handbuch/datenaustausch/daten-exportieren/#4).
 
 Neues Exportformat erstellen:
 
@@ -25,7 +25,7 @@ In der folgenden Tabelle finden Sie Hinweise zu den Einstellungen, Formateinstel
 | **Einstellung**   |      **Erläuterung**| 
 |----------|-------------|
 | Name                          | Name eingeben. Unter diesem Namen erscheint das Exportformat in der Übersicht im Tab **Exporte**. |
-| Typ                           | Typ **Artikel</b> aus dem Dropdown-Menü wählen. |
+| Typ                           | Typ **Artikel** aus dem Dropdown-Menü wählen. |
 | Format                        | **Criteo-Plugin** wählen. |
 | Limit                         | Zahl eingeben. Wenn mehr als 9999 Datensätze an die Preissuchmaschine übertragen werden sollen, wird die Ausgabedatei wird für 24 Stunden nicht noch einmal neu generiert, um Ressourcen zu sparen. Wenn mehr mehr als 9999 Datensätze benötigt werden, muss die Option **Cache-Datei generieren** aktiv sein. |
 | Cache-Datei generieren        | Häkchen setzen, wenn mehr als 9999 Datensätze an die Preissuchmaschine übertragen werden sollen. Um eine optimale Performance des elastischen Exports zu gewährleisten, darf diese Option bei maximal 20 Exportformaten aktiv sein. |
@@ -44,7 +44,7 @@ In der folgenden Tabelle finden Sie Hinweise zu den Einstellungen, Formateinstel
 | Beschreibung                  | Wählen, welcher Text als Beschreibungstext übertragen werden soll.<br /> Im Feld **Maximale Zeichenlänge (def. Text)** optional eine Zahl eingeben, wenn die Preissuchmaschine eine Begrenzung der Länge der Beschreibung beim Export vorgibt.Option **HTML-Tags entfernen** aktivieren, damit die HTML-Tags beim Export entfernt werden. Im Feld **Erlaubte HTML-Tags, kommagetrennt (def. Text)** optional die HTML-Tags eingeben, die beim Export erlaubt sind. Wenn mehrere Tags eingegeben werden, mit Komma trennen. |
 | Zielland                      | Zielland aus dem Dropdown-Menü wählen. |
 | Barcode                       | ASIN, ISBN oder eine EAN aus dem Dropdown-Menü wählen. Der gewählte Barcode muss mit der oben gewählten Auftragsherkunft verknüpft sein. Andernfalls wird der Barcode nicht exportiert. |
-| Bild                          | Position 0</b> oder **Erstes Bild** wählen, um dieses Bild zu exportieren. **Position 0** = Ein Bild mit der Position 0 wird übertragen. <br />**Erstes Bild** = Das erste Bild wird übertragen. Position des Energieetikettes eintragen. Alle Bilder die als Energieetikette übertragen werden sollen, müssen diese Position haben. |
+| Bild                          | **Position 0** oder **Erstes Bild** wählen, um dieses Bild zu exportieren. **Position 0** = Ein Bild mit der Position 0 wird übertragen. <br />**Erstes Bild** = Das erste Bild wird übertragen. Position des Energieetikettes eintragen. Alle Bilder die als Energieetikette übertragen werden sollen, müssen diese Position haben. |
 | Angebotspreis                 | Aktivieren, um den Angebotspreis zu übertragen. |
 | UVP                           | Diese Option ist für dieses Format nicht relevant. |
 | Versandkosten                 | Aktivieren, damit die Versandkosten aus der Konfiguration übernommen werden. Wenn die Option aktiviert ist, stehen in den beiden Dropdown-Menüs Optionen für die Konfiguration und die Zahlungsart zur Verfügung. Option **Pauschale Versandkosten übertragen** aktivieren, damit die pauschalen Versandkosten übertragen werden. Wenn diese Option aktiviert ist, muss im Feld darunter ein Betrag eingegeben werden. |
