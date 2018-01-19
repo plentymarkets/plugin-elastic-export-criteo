@@ -22,8 +22,8 @@ Neues Exportformat erstellen:
 
 In der folgenden Tabelle finden Sie Hinweise zu den Einstellungen, Formateinstellungen und empfohlenen Artikelfiltern für das Format **Criteo-Plugin**.
 
-| **Einstellung**   |      **Erläuterung**| 
-|----------|-------------|
+| **Einstellung**               | **Erläuterung**| 
+| ---                           | --- |
 | Name                          | Name eingeben. Unter diesem Namen erscheint das Exportformat in der Übersicht im Tab **Exporte**. |
 | Typ                           | Typ **Artikel** aus dem Dropdown-Menü wählen. |
 | Format                        | **Criteo-Plugin** wählen. |
