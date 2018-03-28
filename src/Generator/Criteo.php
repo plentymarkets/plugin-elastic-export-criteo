@@ -7,6 +7,7 @@ use ElasticExport\Helper\ElasticExportItemHelper;
 use ElasticExport\Helper\ElasticExportPriceHelper;
 use ElasticExport\Helper\ElasticExportStockHelper;
 use ElasticExport\Helper\ElasticExportPropertyHelper;
+use ElasticExport\Services\FiltrationService;
 use ElasticExportCriteo\Helper\AttributeHelper;
 use ElasticExportCriteo\Helper\ImageHelper;
 use ElasticExportCriteo\Helper\PriceHelper;
@@ -111,6 +112,11 @@ class Criteo extends CSVPluginGenerator
     private $shippingCostCache;
 
     /**
+     * @var FiltrationService
+     */
+    private $filtrationService;
+
+    /**
      * Criteo constructor.
      *
      * @param ArrayHelper $arrayHelper
@@ -151,6 +157,7 @@ class Criteo extends CSVPluginGenerator
 
         // Get mapped settings from export
         $settings = $this->arrayHelper->buildMapFromObjectList($formatSettings, 'key', 'value');
+        $this->filtrationService = pluginApp(FiltrationService::class, [$settings, $filter]);
 
         // Delimiter accepted are TAB or COMMA
         $this->setDelimiter(self::DELIMITER);
@@ -211,7 +218,7 @@ class Criteo extends CSVPluginGenerator
                         }
 
                         // If filtered by stock is set and stock is negative, then skip the variation
-                        if($this->elasticExportStockHelper->isFilteredByStock($variation, $filter) === true)
+                        if($this->filtrationService->filter($variation))
                         {
                             continue;
                         }
