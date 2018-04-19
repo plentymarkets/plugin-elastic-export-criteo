@@ -13,13 +13,8 @@
     "de": "Die Integration des Datenformats Criteo-Plugin ermöglicht die Artikeldatenübertragung zum Affiliate-Dienstleister criteo über den elastischen Export.",
     "en": "The integration of the data format Criteo-Plugin enables the transfer of item data to the affiliate service provider criteo via the elastic export."
   },
-  "categories": [
-    "3523"
-  ],
-  "version": "1.0.2",
+  "categories": ["3523"],
+  "version": "1.0.3",
   "require": ["ElasticExport"],
-  "marketplaceName": {
-    "de":"criteo",
-    "en":"criteo"
-  }
+  "marketplaceName": "criteo"
 }
