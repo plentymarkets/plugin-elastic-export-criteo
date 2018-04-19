@@ -1,6 +1,6 @@
 # Release Notes for Elastic Export Criteo
 
-## v1.0.3 (2018-03-28)
+## v1.0.3 (2018-04-19)
 
 ### Changed
 - The class FiltrationService is responsible for the filtration of all variations.

@@ -1,6 +1,6 @@
 # Release Notes für Elastic Export Criteo
 
-## v1.0.3 (2018-03-28)
+## v1.0.3 (2018-04-19)
 
 ### Geändert
 - Die Klasse FiltrationService übernimmt die Filtrierung der Varianten.
