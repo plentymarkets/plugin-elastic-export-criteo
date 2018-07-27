@@ -1,5 +1,10 @@
 # Release Notes für Elastic Export Criteo
 
+## v1.0.4 (2018-07-27)
+
+### Geändert
+- Dem User Guide wurden weitere Informationen zur Einrichtung des Plugins hinzugefügt.
+
 ## v1.0.3 (2018-04-19)
 
 ### Geändert
