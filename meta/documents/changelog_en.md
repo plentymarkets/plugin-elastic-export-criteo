@@ -1,5 +1,10 @@
 # Release Notes for Elastic Export Criteo
 
+## v1.0.5 (2019-01-21)
+
+### Changed
+- An incorrect link in the user guide was corrected.
+
 ## v1.0.4 (2018-07-27)
 
 ### Changed
