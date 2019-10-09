@@ -2,7 +2,7 @@
   "name": "ElasticExportCriteo",
   "description": "This plugin adds the format Criteo to the Elastic Export.",
   "namespace": "ElasticExportCriteo",
-  "author": "plentymarkets GmbH",
+  "author": "plentysystems AG",
   "type": "export",
   "authorIcon": "icon_author_xs.png",
   "serviceProvider": "ElasticExportCriteo\\ElasticExportCriteoServiceProvider",
@@ -14,7 +14,7 @@
     "en": "The integration of the data format Criteo-Plugin enables the transfer of item data to the affiliate service provider criteo via the elastic export."
   },
   "categories": ["3880"],
-  "version": "1.0.5",
+  "version": "1.0.6",
   "require": ["ElasticExport"],
   "marketplaceName": {
     "de": "criteo",
