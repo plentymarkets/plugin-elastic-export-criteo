@@ -1,5 +1,11 @@
 # Release Notes für Elastic Export Criteo
 
+## v1.0.7 (2020-09-17)
+
+### Geändert
+- Plugin-Informationen aktualisiert.
+- Plugin-Beschreibung ins plentymarkets Handbuch umgezogen.
+
 ## v1.0.6 (2019-10-09)
 
 ### Geändert
