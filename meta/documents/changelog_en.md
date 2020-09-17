@@ -1,5 +1,11 @@
 # Release Notes for Elastic Export Criteo
 
+## v1.0.7 (2020-09-17)
+
+### Changed
+- Plugin information updated.
+- Moved user guide to plentymarkets manual.
+
 ## v1.0.6 (2019-10-09)
 
 ### Changed
@@ -19,7 +25,7 @@
 
 ### Changed
 - The class FiltrationService is responsible for the filtration of all variations.
-- Preview images updated. 
+- Preview images updated.
 
 ## v1.0.2 (2018-02-27)
 
