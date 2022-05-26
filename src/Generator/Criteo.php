@@ -197,14 +197,14 @@ class Criteo extends CSVPluginGenerator
 					$this->getLogger(__METHOD__)->addReference('total', (int)$resultList['total'])->info('ElasticExportCriteo::log.esResultAmount');
 				}
 
-                if(count($resultList['error']) > 0)
+                if(count($resultList['error'] ?? []) > 0)
                 {
                     $this->getLogger(__METHOD__)->addReference('failedShard', $shardIterator)->error('ElasticExportCriteo::log.occurredElasticSearchErrors', [
                         'message' => $resultList['error'],
                     ]);
                 }
 
-                if(is_array($resultList['documents']) && count($resultList['documents']) > 0)
+                if(is_array($resultList['documents']) && count($resultList['documents'] ?? []) > 0)
                 {
                     $previousItemId = null;
 
