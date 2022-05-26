@@ -1,5 +1,10 @@
 # Release Notes für Elastic Export Criteo
 
+## v1.0.8 (2022-05-26)
+
+### Geändert
+- UPDATE - Zusätzliche Updates für Kompatibilität mit PHP 8.
+
 ## v1.0.7 (2020-09-17)
 
 ### Geändert
